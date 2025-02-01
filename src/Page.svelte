@@ -9,7 +9,7 @@
     }
 
     .page {
-        max-width: 800px;
+        max-width: 1080px;
         margin: auto;
         padding: 0 24px;
     }
