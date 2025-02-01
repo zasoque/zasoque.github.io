@@ -1,5 +1,6 @@
 <script>
     export let container = "";
+    export let style;
 </script>
 
 <style>
@@ -19,7 +20,7 @@
     }
 </style>
 
-<div class="container {container}">
+<div class="container {container}" {style}>
     <div class="page">
         <slot></slot>
     </div>

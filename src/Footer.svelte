@@ -39,6 +39,13 @@
                 <div class="list-item"><a href="mailto://junhg0211@gmail.com">Ügranemaletera</a></div>
                 <div class="list-item"><a href="https://discord.gg/D3URHFc9uy">J Discord</a></div>
             </div>
+            <div class="column">
+            </div>
+            <div class="column">
+            </div>
+            <div class="column">
+                Krifè da Extelofaxasèzasoquéügranemapotaçamis
+            </div>
         </div>
     </div>
 </Page>

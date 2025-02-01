@@ -1,10 +1,12 @@
 <script>
     import Page from "./Page.svelte";
+
+    export let style;
+    export let height = "100vh";
 </script>
 
 <style>
     .page {
-        height: 100vh;
         display: flex;
     }
 
@@ -15,8 +17,8 @@
     }
 </style>
 
-<Page>
-    <div class="page">
+<Page {style}>
+    <div class="page" style="height: {height};">
         <div class="container">
             <slot></slot>
         </div>
