@@ -5,7 +5,7 @@
 
     onMount(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 100 && container) {
                 container.style.transform = "translateY(0)";
             } else {
                 container.style.transform = "translateY(-100%)";

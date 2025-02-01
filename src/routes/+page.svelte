@@ -35,21 +35,19 @@
     .content {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
     }
 
     .column {
         flex: 1;
-        max-height: 320px;
     }
 
     .column-2 {
         flex: 2;
-        max-height: 320px;
     }
 
     .column-3 {
         flex: 3;
-        max-height: 320px;
     }
 
     .paragraph {
