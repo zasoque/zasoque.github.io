@@ -2,6 +2,7 @@
     import OnePage from "../OnePage.svelte";
     import Page from "../Page.svelte";
     import Footer from "../Footer.svelte";
+    import Navigation from "../Navigation.svelte";
 
     import "bootstrap-icons/font/bootstrap-icons.css";
 </script>
@@ -66,10 +67,11 @@
     }
 </style>
 
+<Navigation></Navigation>
 <OnePage style="background: linear-gradient(0deg, #f7f7f9dd, #f7f7f99f), url(/flag.svg) center; background-size: cover;">
     <div class="title">Feloxipùno da Zasoque!</div>
     <div class="content">Aniska, Sat!</div>
-    <div class="content chevron" bind:this={ chevron }><i class="bi bi-chevron-down"></i></div>
+    <div class="content chevron"><i class="bi bi-chevron-down"></i></div>
 </OnePage>
 <Page>
     <div class="content">

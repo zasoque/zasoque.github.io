@@ -1,14 +1,32 @@
+<script>
+    import { onMount } from "svelte";
+
+    let container;
+
+    onMount(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                container.style.transform = "translateY(0)";
+            } else {
+                container.style.transform = "translateY(-100%)";
+            }
+        });
+    });
+</script>
+
 <style>
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 0;
+        padding: 12px 0;
         position: fixed;
         width: 100vw;
-
         background-color: var(--grey);
         color: var(--white);
+
+        transition: ease-in-out 0.5s transform;
+        transform: translateY(-100%);
     }
 
     .content {
