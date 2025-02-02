@@ -1,8 +1,10 @@
 <script>
-    import OnePage from "../OnePage.svelte";
-    import Page from "../Page.svelte";
-    import Footer from "../Footer.svelte";
-    import Navigation from "../Navigation.svelte";
+    import OnePage from "./OnePage.svelte";
+    import Page from "./Page.svelte";
+    import Content from "./Content.svelte";
+    import Column from "./Column.svelte";
+    import Paragraph from "./Paragraph.svelte";
+    import Metadata from "./Metadata.svelte";
 
     import "bootstrap-icons/font/bootstrap-icons.css";
 </script>
@@ -25,77 +27,40 @@
             transform: translateY(-5px);
         }
     }
-
-    .title {
-        font-size: 2em;
-        margin-top: 24px;
-        font-family: var(--condensed), sans-serif;
-    }
-
-    .content {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .column {
-        flex: 1;
-    }
-
-    .column-2 {
-        flex: 2;
-    }
-
-    .column-3 {
-        flex: 3;
-    }
-
-    .paragraph {
-        margin-top: 0.5em;
-    }
-
-    .metadata {
-        color: #2c2c2c9f;
-        font-size: 0.8em;
-        margin-top: 0.5em;
-    }
-
-    .metadata::before {
-        content: "- ";
-    }
 </style>
 
-<Navigation></Navigation>
 <OnePage style="background: linear-gradient(0deg, #f7f7f9dd, #f7f7f99f), url(/flag.svg) center; background-size: cover;">
-    <div class="title">Feloxipùno da Zasoque!</div>
-    <div class="content">Aniska, Sat!</div>
-    <div class="content chevron"><i class="bi bi-chevron-down"></i></div>
+    <Column title="Feloxipùno da Zasoque!">
+        <Paragraph>Aniska, Sat!</Paragraph>
+        <Paragraph>
+            <div class="chevron">
+                <i class="bi bi-chevron-down"></i>
+            </div>
+        </Paragraph>
+    </Column>
 </OnePage>
 <Page>
-    <div class="content">
-        <div class="column">
-            <div class="title">Zasoqûm quavùll</div>
-            <div class="paragraph">
+    <Content>
+        <Column title="Zasoqûm quavùll">
+            <Paragraph>
                 Zasoquas J Zasoque da krifìç é Krinatio.
-            </div>
-            <div class="paragraph">
+            </Paragraph>
+            <Paragraph>
                 «Krinatio»-s Insürtiksùmim izàhull, Sioquedas laro Stara'l gorùll krifùquê Énatiol draviàsum.  Zasoquas ä Spiquèho; Zasospiqua'l gorùll krifùquê. Spiquas ä Has da poirnùqûm Íckosum raspùquefe Krifùquie izìa, Zasoque d'iks Ésiros'um ä Natio lar'ä Megias'as iksàhe. Ad J Zasoque da tagèull tou Spiqual oh öxùie Krifìl gorùllas Natio d'unas, J Chrisanctheséspiqual krifìçéie Liszt; J Paul Louis samie tiägè lo Maquê-Sat, ad Zasoque l'Hirénatè iksùm umie Sat roy vexàse.
-            </div>
-            <div class="metadata">Zasoque Scîe, 2025-Ärgê 1-Télital, 22:49</div>
-        </div>
-        <div class="column">
-            <div class="title">Diséügranemapotaçamis</div>
-            <div class="paragraph">
+            </Paragraph>
+            <Metadata>Zasoque Scîe, 2025-Ärgê 1-Télital, 22:49</Metadata>
+        </Column>
+        <Column title="Diséügranemapotaçamis">
+            <Paragraph>
                 Disas Ügranemapotaçamisèzasoque. Màtaupùm quavùll um Zasoque um Disépotaçamis. Zasoquémegias lo lofanàro, Zasospiqual nòlofanùtum um difaxas.
-            </div>
-            <div class="paragraph">
+            </Paragraph>
+            <Paragraph>
                 Diséügranemapotaçamisas 2025-Ärgê 1-Télital'um krifùquê. J Gaurosseaux d'ironarisùll quavùll um Linnam, J Zasoque da tagè tou hòinosùdum Jélinnamè quavùm um Zasoque. Ä Zozaqûis J Extelom quav Élinnam suan hòvagìçeular.
-            </div>
-            <div class="paragraph">
+            </Paragraph>
+            <Paragraph>
                 Zasoquélinnam lo inosèular, maxé Zasokrifi'l krifùll, ö niram Vizaxàsutil gorùll zequàd.  Üpa!
-            </div>
-            <div class="metadata">Zasoque Scîe, 2025-Ärgê 1-Télital, 22:27</div>
-        </div>
-    </div>
+            </Paragraph>
+            <Metadata>Zasoque Scîe, 2025-Ärgê 1-Télital, 22:27</Metadata>
+        </Column>
+    </Content>
 </Page>
-<Footer />
