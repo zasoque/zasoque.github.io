@@ -1,25 +1,26 @@
 <script>
     import Page from "../../Page.svelte";
-    import Column from "../../Column.svelte";
 	import Paragraph from "../../Paragraph.svelte";
-	import Metadata from "../../Metadata.svelte";
     import { page } from '$app/stores';
 	import { onMount } from "svelte";
 
-    let article;
-    $: title = "";
+    $: article = {};
     $: paragraphs = [];
-    $: metadata = "";
 
     const path = $page.params.path;
 
     async function loadContent() {
-        const req = await fetch(`/posts/${path}`);
-        const text = (await req.text());
-        title = text.match(/^# (.*)\n/)[1];
-        const content = text.substring(3 + title.length);
-        paragraphs = content.split(/\n\n/);
-        metadata = paragraphs.splice(paragraphs.length-1)[0];
+        fetch("/posts.json")
+            .then(req => req.text())
+            .then(text => {
+                article = JSON.parse(text).filter(post => post.path === path)[0];
+            })
+
+        fetch(`/posts/${path}`)
+            .then(req => req.text())
+            .then(text => {
+                paragraphs = text.split(/\n\n/);
+            });
     }
 
     onMount(() => {
@@ -27,13 +28,28 @@
     });
 </script>
 
+<style>
+    .title {
+        text-align: center;
+        font-family: var(--condensed), sans-serif;
+        font-size: 3em;
+    }
+
+    .metadata {
+        text-align: center;
+    }
+</style>
+
+<Page style="background: linear-gradient(0deg, #fdde599f, #fdde59dd), url(/flag.svg) center; background-size: cover;">
+    <a href="/">
+        <div class="title">{article.title}</div>
+        <div class="metadata">{article.metadata}</div>
+    </a>
+</Page>
 <Page>
-    <Column {title}>
-        {#each paragraphs as paragraph}
-        <Paragraph>
-            {paragraph}
-        </Paragraph>
-        {/each}
-        <Metadata>{metadata}</Metadata>
-    </Column>
+    {#each paragraphs as paragraph}
+    <Paragraph>
+        {paragraph}
+    </Paragraph>
+    {/each}
 </Page>
