@@ -32,8 +32,8 @@
                 <div class="list-title">Ügranemapotaçamis</div>
                 <div class="list-item"><a href="http://www.shtelo.org/">J Gwangbuwiki</a></div>
                 <div class="list-item"><a href="https://me.shtelo.org">J Scîe</a></div>
-                <div class="list-item"><a href="https://docs.google.com/spreadsheets/d/1QSqIbmShJiUiJWNB0x8dQzGbb6W1dqEz_LBlP363e_E/edit">Tavleçamisévapy</a></div>
-                <div class="list-item"><a href="https://zasoque.org/vapy">Vapy</a></div>
+                <div class="list-item"><a href="https://zasoque.org/vapy">Vapy</a> (<a href="https://docs.google.com/spreadsheets/d/1QSqIbmShJiUiJWNB0x8dQzGbb6W1dqEz_LBlP363e_E/edit">Tavleçamis</a>)</div>
+                <div class="list-item"><a href="https://zasoque.org/sosanarisas">Sosanarisas</a></div>
             </div>
             <div class="column">
                 <div class="list-title">Uatevanas</div>
