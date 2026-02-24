@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="title">자소크.org</div>
+
+<style>
+	.title {
+		font-size: 2em;
+		font-weight: bold;
+		color: #333;
+		text-align: center;
+	}
+</style>
