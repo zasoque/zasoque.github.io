@@ -14,6 +14,7 @@
 	<li><a href="https://draquet.github.io/PolyGlot/">PolyGlot 인공어 관리 프로그램</a></li>
 	<li><a href="https://www.lexurgy.com/">음운변동 시뮬레이터</a></li>
 	<li><a href="https://www.kratylos.org/~raphael/claw/phonomaton.cgi">음운변동 시뮬레이터 2</a></li>
+	<li><a href="https://me.shtelo.org/syntree-svg/">수형도 그리기 SVG</a></li>
 </ul>
 <div>기성언어학 도구</div>
 <ul>
