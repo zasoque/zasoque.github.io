@@ -26,8 +26,9 @@
 <ul>
 	<li><a href="https://zasoque.org/speed-reader">속독기</a></li>
 </ul>
-<div>커뮤니티</div>
+<div>커뮤니티 / 웹사이트</div>
 <ul>
+	<li><a href="https://github.com/zasoque/zasoque.github.io">zasoque.org GitHub 레포지토리</a></li>
 	<li><a href="https://cafe.naver.com/stelo">스텔로 네이버 카페</a></li>
 	<li><a href="https://migdal.jp">미그달 (일본어)</a></li>
 	<li><a href="https://reddit.com/r/conlangs">r/conlangs (영어)</a></li>
