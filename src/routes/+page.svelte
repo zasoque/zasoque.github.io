@@ -25,6 +25,7 @@
 <div>유용한 도구</div>
 <ul>
 	<li><a href="https://zasoque.org/speed-reader">속독기</a></li>
+	<li><a href="https://me.shtelo.org/notepad">온라인 텍스트 필드</a></li>
 </ul>
 <div>커뮤니티 / 웹사이트</div>
 <ul>
