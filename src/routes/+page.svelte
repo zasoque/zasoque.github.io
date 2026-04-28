@@ -5,7 +5,9 @@
 </ul>
 <div>인공언어 도구</div>
 <ul>
+	<li><a href="https://ipa.typeit.org/full/">IPA 입력기</a></li>
 	<li><a href="https://astianthus.github.io/sophoi/">IPA 풀 차트</a></li>
+	<li><a href="https://www.ipachart.com">IPA 소리 듣기</a></li>
 	<li><a href="https://fontdrop.info">폰트 파일 미리보기 사이트</a></li>
 	<li><a href="https://zasoque.org/glossing">행간주석 도구</a></li>
 	<li><a href="https://zasoque.org/dictform">단어장 도구</a></li>
