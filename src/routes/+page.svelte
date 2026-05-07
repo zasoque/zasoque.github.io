@@ -23,6 +23,7 @@
 	<li><a href="https://defseg.io/psmith/">언어 인벤토리 검색 사이트</a></li>
 	<li><a href="https://readingglosses.com/">행간주석 공부 블로그</a></li>
 	<li><a href="https://www.wordfrequency.info/samples.asp">단어 빈도 분석 데이터</a></li>
+	<li><a href="http://hanzishan.com/">알고 있는 한자 개수 파악하는 사이트</a></li>
 </ul>
 <div>유용한 도구</div>
 <ul>
