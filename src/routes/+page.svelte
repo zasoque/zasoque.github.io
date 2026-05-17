@@ -17,6 +17,12 @@
 	<li><a href="https://www.lexurgy.com/">음운변동 시뮬레이터</a></li>
 	<li><a href="https://www.kratylos.org/~raphael/claw/phonomaton.cgi">음운변동 시뮬레이터 2</a></li>
 	<li><a href="https://me.shtelo.org/syntree-svg/">수형도 그리기 SVG</a></li>
+	<li>
+		<a
+			href="https://docs.google.com/spreadsheets/d/1FkXrk6B0Vth7xLuQB_SyTnBj9hVVHAjKa21_cJBZB1c/edit?gid=0#gid=0"
+			>한국 인공언어 데이터베이스</a
+		>
+	</li>
 </ul>
 <div>기성언어학 도구</div>
 <ul>
