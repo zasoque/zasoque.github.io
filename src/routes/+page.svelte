@@ -2,6 +2,7 @@
 <ul>
 	<li><a href="https://zasoque.org/tion">자소크어 사전</a></li>
 	<li><a href="https://zasoque.org/comcosifin">자소크어 작문 도구</a></li>
+	<li><a href="https://zasoque.org/diacritic">다이어크리틱 입력 도구</a></li>
 </ul>
 <div>인공언어 도구</div>
 <ul>
