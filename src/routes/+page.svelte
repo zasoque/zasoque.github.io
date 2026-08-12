@@ -44,4 +44,5 @@
 	<li><a href="https://cafe.naver.com/stelo">스텔로 네이버 카페</a></li>
 	<li><a href="https://migdal.jp">미그달 (일본어)</a></li>
 	<li><a href="https://reddit.com/r/conlangs">r/conlangs (영어)</a></li>
+	<li><a href="https://docs.google.com/spreadsheets/d/1FkXrk6B0Vth7xLuQB_SyTnBj9hVVHAjKa21_cJBZB1c/edit">스텔로 인공언어 데이터베이스</a></li>
 </ul>
