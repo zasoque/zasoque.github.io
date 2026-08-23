@@ -1,48 +1,64 @@
-<div>자소크어 도구</div>
-<ul>
-	<li><a href="https://zasoque.org/tion">자소크어 사전</a></li>
-	<li><a href="https://zasoque.org/comcosifin">자소크어 작문 도구</a></li>
-	<li><a href="https://zasoque.org/diacritic">다이어크리틱 입력 도구</a></li>
-</ul>
-<div>인공언어 도구</div>
-<ul>
-	<li><a href="https://ipa.typeit.org/full/">IPA 입력기</a></li>
-	<li><a href="https://astianthus.github.io/sophoi/">IPA 풀 차트</a></li>
-	<li><a href="https://www.ipachart.com">IPA 소리 듣기</a></li>
-	<li><a href="https://fontdrop.info">폰트 파일 미리보기 사이트</a></li>
-	<li><a href="https://zasoque.org/glossing">행간주석 도구</a></li>
-	<li><a href="https://zasoque.org/dictform">단어장 도구</a></li>
-	<li><a href="https://aligner.tinygods.dev/">단어별 번역 시각화 도구</a></li>
-	<li><a href="https://lexicanter.com">Lexicanter 인공어 단어장 프로그램</a></li>
-	<li><a href="https://draquet.github.io/PolyGlot/">PolyGlot 인공어 관리 프로그램</a></li>
-	<li><a href="https://www.lexurgy.com/">음운변동 시뮬레이터</a></li>
-	<li><a href="https://www.kratylos.org/~raphael/claw/phonomaton.cgi">음운변동 시뮬레이터 2</a></li>
-	<li><a href="https://me.shtelo.org/syntree-svg/">수형도 그리기 SVG</a></li>
-	<li>
-		<a
-			href="https://docs.google.com/spreadsheets/d/1FkXrk6B0Vth7xLuQB_SyTnBj9hVVHAjKa21_cJBZB1c/edit?gid=0#gid=0"
-			>한국 인공언어 데이터베이스</a
-		>
-	</li>
-</ul>
-<div>기성언어학 도구</div>
-<ul>
-	<li><a href="https://defseg.io/psmith/">언어 인벤토리 검색 사이트</a></li>
-	<li><a href="https://readingglosses.com/">행간주석 공부 블로그</a></li>
-	<li><a href="https://www.wordfrequency.info/samples.asp">단어 빈도 분석 데이터</a></li>
-	<li><a href="http://hanzishan.com/">알고 있는 한자 개수 파악하는 사이트</a></li>
-</ul>
-<div>유용한 도구</div>
-<ul>
-	<li><a href="https://zasoque.org/speed-reader">속독기</a></li>
-	<li><a href="https://me.shtelo.org/notepad">온라인 텍스트 필드</a></li>
-	<li><a href="https://me.shtelo.org/contrast-tester/">색상 대비 비교</a></li>
-</ul>
-<div>커뮤니티 / 웹사이트</div>
-<ul>
-	<li><a href="https://github.com/zasoque/zasoque.github.io">zasoque.org GitHub 레포지토리</a></li>
-	<li><a href="https://cafe.naver.com/stelo">스텔로 네이버 카페</a></li>
-	<li><a href="https://migdal.jp">미그달 (일본어)</a></li>
-	<li><a href="https://reddit.com/r/conlangs">r/conlangs (영어)</a></li>
-	<li><a href="https://docs.google.com/spreadsheets/d/1FkXrk6B0Vth7xLuQB_SyTnBj9hVVHAjKa21_cJBZB1c/edit">스텔로 인공언어 데이터베이스</a></li>
-</ul>
+<div style="max-width: 800px; margin: 0 auto; padding: 18px;">
+	<header style="text-align: center;">
+		<div style="font-size: 32px; font-weight: bold;">Tainatîe Litia</div>
+	</header>
+	<article style="column-count: 2; column-gap: 18px; margin-top: 18px;">
+		<div>자소크어 도구</div>
+		<ul>
+			<li><a href="https://zasoque.org/tion">자소크어 사전</a></li>
+			<li><a href="https://zasoque.org/comcosifin">자소크어 작문 도구</a></li>
+			<li><a href="https://zasoque.org/diacritic">다이어크리틱 입력 도구</a></li>
+		</ul>
+		<div>인공언어 도구</div>
+		<ul>
+			<li><a href="https://ipa.typeit.org/full/">IPA 입력기</a></li>
+			<li><a href="https://astianthus.github.io/sophoi/">IPA 풀 차트</a></li>
+			<li><a href="https://www.ipachart.com">IPA 소리 듣기</a></li>
+			<li><a href="https://fontdrop.info">폰트 파일 미리보기 사이트</a></li>
+			<li><a href="https://zasoque.org/glossing">행간주석 도구</a></li>
+			<li><a href="https://zasoque.org/dictform">단어장 도구</a></li>
+			<li><a href="https://aligner.tinygods.dev/">단어별 번역 시각화 도구</a></li>
+			<li><a href="https://lexicanter.com">Lexicanter 인공어 단어장 프로그램</a></li>
+			<li><a href="https://draquet.github.io/PolyGlot/">PolyGlot 인공어 관리 프로그램</a></li>
+			<li><a href="https://www.lexurgy.com/">음운변동 시뮬레이터</a></li>
+			<li>
+				<a href="https://www.kratylos.org/~raphael/claw/phonomaton.cgi">음운변동 시뮬레이터 2</a>
+			</li>
+			<li><a href="https://me.shtelo.org/syntree-svg/">수형도 그리기 SVG</a></li>
+			<li>
+				<a
+					href="https://docs.google.com/spreadsheets/d/1FkXrk6B0Vth7xLuQB_SyTnBj9hVVHAjKa21_cJBZB1c/edit?gid=0#gid=0"
+					>한국 인공언어 데이터베이스</a
+				>
+			</li>
+		</ul>
+		<div>기성언어학 도구</div>
+		<ul>
+			<li><a href="https://defseg.io/psmith/">언어 인벤토리 검색 사이트</a></li>
+			<li><a href="https://readingglosses.com/">행간주석 공부 블로그</a></li>
+			<li><a href="https://www.wordfrequency.info/samples.asp">단어 빈도 분석 데이터</a></li>
+			<li><a href="http://hanzishan.com/">알고 있는 한자 개수 파악하는 사이트</a></li>
+		</ul>
+		<div>유용한 도구</div>
+		<ul>
+			<li><a href="https://zasoque.org/speed-reader">속독기</a></li>
+			<li><a href="https://me.shtelo.org/notepad">온라인 텍스트 필드</a></li>
+			<li><a href="https://me.shtelo.org/contrast-tester/">색상 대비 비교</a></li>
+		</ul>
+		<div>커뮤니티 / 웹사이트</div>
+		<ul>
+			<li>
+				<a href="https://github.com/zasoque/zasoque.github.io">zasoque.org GitHub 레포지토리</a>
+			</li>
+			<li><a href="https://cafe.naver.com/stelo">스텔로 네이버 카페</a></li>
+			<li><a href="https://migdal.jp">미그달 (일본어)</a></li>
+			<li><a href="https://reddit.com/r/conlangs">r/conlangs (영어)</a></li>
+			<li>
+				<a
+					href="https://docs.google.com/spreadsheets/d/1FkXrk6B0Vth7xLuQB_SyTnBj9hVVHAjKa21_cJBZB1c/edit"
+					>스텔로 인공언어 데이터베이스</a
+				>
+			</li>
+		</ul>
+	</article>
+</div>
