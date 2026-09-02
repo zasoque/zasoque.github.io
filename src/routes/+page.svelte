@@ -1,7 +1,21 @@
+<header
+	style="height: 100vh; background: linear-gradient(30deg,rgba(255, 206, 0, 1) 50%, rgba(25, 25, 30, 1) 50%);"
+>
+	<div
+		style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; height: 100%;"
+	>
+		<div style="flex: 2;"></div>
+		<div style="text-align: right; font-size: 64px; font-weight: bold; color: white;">
+			Tainatîe Litia
+		</div>
+		<div style="text-align: right; font-size: 24px; color: white;">Feloshipùno da Zasoque.</div>
+		<div style="flex: 1;"></div>
+		<div style="font-size: 64px; font-weight: bold;">Ügraçamisîe Sthîe</div>
+		<div style="font-size: 24px;">Vizashòme l'Adoris m'Argüe</div>
+		<div style="flex: 2;"></div>
+	</div>
+</header>
 <div style="max-width: 800px; margin: 0 auto; padding: 18px;">
-	<header style="text-align: center;">
-		<div style="font-size: 32px; font-weight: bold;">Tainatîe Litia</div>
-	</header>
 	<article style="column-count: 2; column-gap: 18px; margin-top: 18px;">
 		<div>자소크어 도구</div>
 		<ul>
