@@ -1,5 +1,5 @@
 <header
-	style="height: 100vh; background: linear-gradient(30deg,rgba(255, 206, 0, 1) 50%, rgba(25, 25, 30, 1) 50%);"
+	style="height: 50vh; background: linear-gradient(30deg,rgba(255, 206, 0, 1) 50%, rgba(25, 25, 30, 1) 50%);"
 >
 	<div
 		style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; height: 100%;"
@@ -10,8 +10,8 @@
 		</div>
 		<div style="text-align: right; font-size: 24px; color: white;">Feloshipùno da Zasoque.</div>
 		<div style="flex: 1;"></div>
-		<div style="font-size: 64px; font-weight: bold;">Ügraçamisîe Sthîe</div>
-		<div style="font-size: 24px;">Vizashòme l'Adoris m'Argüe</div>
+		<div style="font-size: 64px; font-weight: bold; color: #19191e;">Ügraçamisîe Sthîe</div>
+		<div style="font-size: 24px; color: #19191e;">Vizashòme l'Adoris m'Argüe</div>
 		<div style="flex: 2;"></div>
 	</div>
 </header>
