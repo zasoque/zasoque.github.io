@@ -1,0 +1,33 @@
+baseURL = 'https://me.shtelo.org/'
+locale = 'ko-kr'
+timeZone = 'Asia/Seoul'
+enableEmoji = true
+title = 'Zasoque'
+
+[module]
+  [module.mounts]
+    source = 'content'
+    target = 'content'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.mark]
+          enable = true
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+  [markup.highlight]
+    style = 'darcula'
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = true
+    startLevel = 2
+[params]
+  math = true
+[taxonomies]
+  category = 'categories'

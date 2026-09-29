@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Shippori+Mincho+B1&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@font-face {
+  font-family: "Tsukuhou Mincho";
+  src: url("/fonts/TsukuhouMincho-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  unicode-range:
+    U+2E80-2EFF, U+2F00-2FDF, U+3000-303F, U+3040-30FF, U+31F0-31FF, U+3400-4DBF, U+4E00-9FFF,
+    U+F900-FAFF, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "BookkMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BookkMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+code {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 0.8rem;
+}
+:not(:is(pre)) > code {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+body {
+  font-family: "EB Garamond", "Tsukuhou Mincho", "BookkMyungjo", serif;
+  background-color: var(--background-color);
+  color: var(--color);
+  font-size: 14px;
+  line-height: 2;
+  counter-reset: h2-counter;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+  margin: 0;
+
+  --color: light-dark(var(--black), var(--white));
+  --background-color: light-dark(var(--white), var(--black));
+  --black: #19191e;
+  --white: #f7f7f9;
+  --light-grey: #bfbfbf;
+  --dark-grey: #3f3f3f;
+  --grey: #7f7f7f;
+  --light-grey: light-dark(#bfbfbf, #3f3f3f);
+  --accent: light-dark(#e09600, #ffce00);
+  --max-width: 1280px;
+}
+:root[data-font="sans"] body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard,
+    Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.display-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.display-toggle {
+  appearance: none;
+  border: 1px solid var(--grey);
+  border-radius: 999px;
+  padding: 3px 9px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.display-toggle:hover {
+  border-color: var(--accent);
+}
+.display-toggle[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--black);
+}
+.display-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.4rem;
+  counter-reset: h3-counter;
+}
+h2::before {
+  counter-increment: h2-counter;
+  content: counter(h2-counter) ". ";
+  color: var(--accent);
+}
+h3 {
+  font-size: 1.3rem;
+  counter-reset: h4-counter;
+}
+h3::before {
+  counter-increment: h3-counter;
+  content: counter(h2-counter) "." counter(h3-counter) ". ";
+  color: var(--accent);
+}
+h4 {
+  font-size: 1.2rem;
+  counter-reset: h5-counter;
+}
+h4::before {
+  counter-increment: h4-counter;
+  content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) ". ";
+  color: var(--accent);
+}
+h5 {
+  font-size: 1.1rem;
+  counter-reset: h6-counter;
+}
+h5::before {
+  counter-increment: h5-counter;
+  content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "."
+    counter(h5-counter) ". ";
+  color: var(--accent);
+}
+h6 {
+  font-size: 1rem;
+}
+h6::before {
+  counter-increment: h6-counter;
+  content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "."
+    counter(h5-counter) "." counter(h6-counter) ". ";
+  color: var(--accent);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 2px;
+  border-bottom: 1px dotted var(--grey);
+}
+p {
+  text-indent: 1rem;
+  margin-bottom: 0;
+  text-align: justify;
+}
+:is(h1, h2, h3, h4, h5, h6) + p,
+p:first-child {
+  text-indent: 0;
+}
+
+rt {
+  font-size: 0.6em;
+  color: var(--accent);
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+  text-emphasis: dot var(--accent);
+  text-emphasis-position: over right;
+  -webkit-text-emphasis: dot var(--accent);
+  -webkit-text-emphasis-position: over;
+}
+
+ol,
+ul {
+  padding-left: 20px;
+}
+ol:not(:last-child),
+ul:not(:last-child) {
+  padding-bottom: 8px;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+ol ol ol {
+  list-style-type: lower-roman;
+}
+ol ol ol ol {
+  list-style-type: decimal;
+}
+
+blockquote {
+  text-align: center;
+}
+blockquote p {
+  text-indent: 0;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+footer p {
+  text-indent: 0;
+}
+
+pre {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-wrap: pretty;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+figure {
+  text-align: center;
+}
+figcaption {
+  font-size: 0.8rem;
+  color: var(--grey);
+  font-style: italic;
+}
+img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+hr {
+  border: none;
+}
+hr::after {
+  content: "⁂"; /* 아스테리즘 유니코드 기호(U+2042) 삽입 */
+  color: var(--accent);
+  text-align: center;
+  display: block;
+}
+
+del {
+  color: var(--grey);
+}
+del:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+thead,
+tbody {
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+}
+td,
+th {
+  padding: 4px 8px;
+}
+
+#TableOfContents {
+  display: inline-block;
+}
+#TableOfContents ol,
+#TableOfContents ul {
+  margin: 0;
+}
+#TableOfContents li::marker {
+  color: var(--accent);
+}
+#TableOfContents a {
+  color: inherit;
+}
