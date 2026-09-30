@@ -13,7 +13,14 @@
     {{ partial "opengraph.html" . }}
   </head>
   <body>
-    <header style="border-bottom: 2px solid var(--accent); padding: 1rem; width: 100vw">
+    <header
+      style="
+        border-bottom: 2px solid var(--accent);
+        padding: 1rem;
+        width: 100vw;
+        box-sizing: border-box;
+      "
+    >
       <div
         style="
           max-width: var(--max-width);
