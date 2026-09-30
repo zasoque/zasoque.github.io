@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="/" aria-label="Zasoque 홈">
+      <img src="/images/ponitelen-yellow.svg" alt="" />
+      <span>ZASOQUE</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      {{ $current := .RelPermalink }}
+      {{ range hugo.Data.navigation }}
+      <a href="{{ .url }}"{{ if eq $current .url }} aria-current="page"{{ end }}>{{ .name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

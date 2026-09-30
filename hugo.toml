@@ -29,5 +29,6 @@ title = 'Zasoque'
     startLevel = 2
 [params]
   math = true
+  repository = 'https://github.com/zasoque/zasoque.github.io'
 [taxonomies]
   category = 'categories'
