@@ -4,60 +4,65 @@
     <header class="article__header">
       <div class="article__eyebrow">ZASOQUE <span></span></div>
       <h1>{{ .Title }}</h1>
-      {{ with .Description }}<p class="article__description">{{ . }}</p>{{ end }}
+      {{ with .Description }}
+      <p class="article__description">{{ . }}</p>
+      {{ end }}
       <div class="article__meta">
-      {{ $page := .Page }} {{ if .Page.Params.Categories | len }}
-      <span>
-        {{ range $i, $category := .Page.Params.Categories }}
+        {{ $page := .Page }} {{ if .Page.Params.Categories | len }}
         <span>
-          <a href="/categories/{{ $category | urlize }}">{{ $category }}</a>{{ if not (eq (add $i 1)
-          (len $page.Params.Categories)) }}<span>,</span>{{ end }}
+          {{ range $i, $category := .Page.Params.Categories }}
+          <span>
+            <a href="/categories/{{ $category | urlize }}">{{ $category }}</a>{{ if not (eq (add $i
+            1) (len $page.Params.Categories)) }}<span>,</span>{{ end }}
+          </span>
+          {{ end }}
+          <span>—</span>
         </span>
         {{ end }}
-        <span>—</span>
-      </span>
-      {{ end }}
-      <time>{{ (time.In "Asia/Seoul" .Date).Format "2006년 1월 2일 15:04" }}</time>
+        <time>
+          {{ printf "%s Ärgué %d %s, %s" (.Date.Format "2006") .Date.Day (i18n (printf "month.%d"
+          .Date.Month)) (.Date.Format "15:04") }}
+        </time>
       </div>
     </header>
     <div class="article__content">{{ partial "content.html" . }}</div>
   </article>
   <footer class="article-footer">
     <div class="article__actions">
-    <a
-      href="{{ .Site.Params.repository }}/blob/main/content/{{ .File.Path }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      GitHub에서 수정
-    </a>
+      <a
+        href="{{ .Site.Params.repository }}/blob/main/content/{{ .File.Path }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Uaguizàs umie GitHub
+      </a>
     </div>
-    <nav class="article-pagination" aria-label="전체 글 이동">
-    {{ $pages := site.RegularPages.ByDate }} {{ $current := . }} {{ range $i, $page := $pages }} {{
-    if eq $page $current }} {{ if gt $i 0 }} {{ $prev := index $pages (sub $i 1) }}
-    <a href="{{ $prev.RelPermalink }}"> ← {{ $prev.Title }} </a>
-    {{ end }}
-    <span style="flex: 1"></span>
-    {{ if lt $i (sub (len $pages) 1) }} {{ $next := index $pages (add $i 1) }}
-    <a href="{{ $next.RelPermalink }}"> {{ $next.Title }} → </a>
-    {{ end }} {{ end }} {{ end }}
-    </nav>
-  {{ range .Params.Categories }}
-  <div class="category-pagination">
-    <div><a href="/categories/{{ . | urlize }}/">{{ . }}</a>의 글</div>
-    <nav aria-label="{{ . }} 글 이동">
-      {{ $category := . }} {{ $categoryPages := where site.RegularPages.ByDate "Params.Categories"
-      "intersect" (slice $category) }} {{ range $i, $page := $categoryPages }} {{ if eq $page $.Page
-      }} {{ if gt $i 0 }} {{ $prev := index $categoryPages (sub $i 1) }}
+    <nav class="article-pagination" aria-label="Moque um Olánafie">
+      {{ $pages := site.RegularPages.ByDate }} {{ $current := . }} {{ range $i, $page := $pages }}
+      {{ if eq $page $current }} {{ if gt $i 0 }} {{ $prev := index $pages (sub $i 1) }}
       <a href="{{ $prev.RelPermalink }}"> ← {{ $prev.Title }} </a>
       {{ end }}
       <span style="flex: 1"></span>
-      {{ if lt $i (sub (len $categoryPages) 1) }} {{ $next := index $categoryPages (add $i 1) }}
+      {{ if lt $i (sub (len $pages) 1) }} {{ $next := index $pages (add $i 1) }}
       <a href="{{ $next.RelPermalink }}"> {{ $next.Title }} → </a>
       {{ end }} {{ end }} {{ end }}
     </nav>
-  </div>
-  {{ end }}
+    {{ range .Params.Categories }}
+    <div class="category-pagination">
+      <div><a href="/categories/{{ . | urlize }}/">{{ . }}</a> Épotas</div>
+      <nav aria-label="{{ . }}Épotasum moque">
+        {{ $category := . }} {{ $categoryPages := where site.RegularPages.ByDate "Params.Categories"
+        "intersect" (slice $category) }} {{ range $i, $page := $categoryPages }} {{ if eq $page
+        $.Page }} {{ if gt $i 0 }} {{ $prev := index $categoryPages (sub $i 1) }}
+        <a href="{{ $prev.RelPermalink }}"> ← {{ $prev.Title }} </a>
+        {{ end }}
+        <span style="flex: 1"></span>
+        {{ if lt $i (sub (len $categoryPages) 1) }} {{ $next := index $categoryPages (add $i 1) }}
+        <a href="{{ $next.RelPermalink }}"> {{ $next.Title }} → </a>
+        {{ end }} {{ end }} {{ end }}
+      </nav>
+    </div>
+    {{ end }}
   </footer>
 </main>
 {{ end }}

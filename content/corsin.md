@@ -6,10 +6,5 @@ categories:
   - Corsin
 ---
 
-## 세계를 구성하는 일
-
-Corsin은 설정, 서사, 창작 과정처럼 여러 조각이 서로 연결되는 긴 호흡의 기록입니다. 결과뿐 아니라 선택의 이유와 바뀌어 온 과정도 함께 남깁니다.
-
-## 이어서 읽기
-
-[Corsisiparasin](/corsisiparasin/)에서 Zasoque의 흐름과 구조를 한눈에 살펴볼 수 있습니다.
+Zasoqué Vizashùquécorsisiparasiné **Glishorsin,** ad **Corza,** hisiné Mashédiornécorsisiparasin to,
+difashasum daiavizashòme.

@@ -1,20 +1,22 @@
 ---
 title: "Cavùll"
 date: 2026-09-30T10:00:00+09:00
-description: "Zasoque의 기록과 도구를 찾아가는 첫 번째 안내서입니다."
+description: "Dis zùm um Zasoqué devùm Éügranemapotaçamis."
 categories:
-  - 안내
+  - Taup
 ---
 
-## Zasoque에 오신 것을 환영합니다
+## Feloshipùno da Zasoque
 
-이곳은 언어를 만들고, 세계를 기록하고, 그 과정에서 발견한 생각을 모아 두는 공간입니다. 상단 메뉴에서는 기록의 성격에 따라 나뉜 다섯 갈래를 둘러볼 수 있습니다.
+Difashasas crifùll'o Spica, ad potaùll'o Sat, linfosàsum lo Tague Éfashas. Äv Ügram sùm
+Épolynnarisinum ä Mashhúmitum nòmocùtum.
 
-## 둘러보는 법
+## Nivizamitoda
 
-- **Disica**에는 관찰과 일상의 기록을 모읍니다.
-- **Corsin**에는 창작 과정과 긴 글을 싣습니다.
-- **Spica**에서는 언어와 표현을 다룹니다.
-- **Meguias**에는 프로젝트와 연결된 자료를 정리합니다.
+- J **Cavùllum** sùm da Taup.
+- J **Disicam** sùm da Linfosìe Mychivizash ad Olith.
+- J **Corsinum** sùm da Potìe cavùm um Zasocum fluctùm é Corsin ad Corsisiparasin.
+- J **Spicam** tamalùm lo Spicamodifia ad Uat.
+- J **Meguiasum** talidùm lo Zasoqué Meguias ad Flumitoda.
 
-처음 방문했다면 홈의 `Sulachîe Zasoque`에서 대표 글부터 살펴보세요.
+Dizozaque da Nínatantishémodiloque izùsua vizashòme lo [Meguias](/meguias) inatantishùie.

@@ -4,6 +4,12 @@ timeZone = 'Asia/Seoul'
 enableEmoji = true
 title = 'Zasoque'
 
+defaultContentLanguage = "za"
+
+[languages.za]
+  languageName = "Zasokese"
+  locale = "za-TL"
+
 [module]
   [module.mounts]
     source = 'content'
